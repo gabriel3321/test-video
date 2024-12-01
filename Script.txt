@@ -11,6 +11,6 @@ function setMotoSpeed(moto, speed)
 end
 
 -- Definindo a super velocidade para a moto de entregador
-setMotoSpeed(motoDeEntregador, 100)
+setMotoSpeed(motoDeEntregador, 1000)
 
 print("Nova velocidade da moto de entregador definida.")
