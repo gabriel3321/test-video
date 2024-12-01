@@ -1,0 +1,16 @@
+-- Script Roblox Lua para aumentar a velocidade da moto de entregador
+
+-- Referência ao objeto da moto
+local motoDeEntregador = game.Workspace:WaitForChild("MotoDeEntregador")
+
+-- Função para definir a velocidade da moto
+function setMotoSpeed(moto, speed)
+    if moto and moto:IsA("VehicleSeat") then
+        moto.MaxSpeed = speed
+    end
+end
+
+-- Definindo a super velocidade para a moto de entregador
+setMotoSpeed(motoDeEntregador, 100)
+
+print("Nova velocidade da moto de entregador definida.")
